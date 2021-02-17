@@ -100,6 +100,7 @@ html {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	text-align: center;
 }
 
 .bg-img {
@@ -147,6 +148,36 @@ section {
 .slogan button:hover{
 	background-color: var(--primary-color);
 	color: var(--white);
+}
+
+/* About section */
+.fullwidth{
+	width: 100%;
+}
+
+#about img{
+	border-radius: 2rem;
+	box-shadow: rgba(17, 17, 26, .1) 0 8px 24px,
+	rgba(17, 17, 26, .1) 0 16px 56px,
+	rgba(17, 17, 26, .1) 0 24px 80px;
+}
+
+.about-slogan{
+	padding: 4rem;
+	background-color: var(--white);
+	border-radius: 2rem;
+	box-shadow: rgba(0, 0, 0, .15) 0 2px 8px;
+	transform: translateX(-10rem);
+}
+
+.about-slogan h3{
+	font-size: 2rem;
+	color: var(--grey);
+	margin-bottom: 3rem;
+}
+
+.primary-color{
+	color: var(--primary-color);
 }
 
 /* GRID SYSTEM */
