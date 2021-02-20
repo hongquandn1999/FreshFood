@@ -326,6 +326,43 @@ section {
 .rating i{
 	color: var(--primary-color);
 }
+
+/* Footer */
+.footer{
+	color: var(--white);
+}
+
+.footer h1{
+	color: var(--primary-color);
+
+}
+
+.input-group{
+	padding: 1rem;
+	border: .125rem solid var(--primary-color);
+	border-radius: 2rem;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 2rem;
+}
+
+.input-group input{
+	flex: auto;
+	outline: none;
+	border: none;
+	color: var(--primary-color);
+	background-color: transparent;
+}
+
+.input-group button{
+	padding: .5rem 1rem;
+	outline: none;
+	border: none;
+	background-color: var(--primary-color);
+	color: var(--white);
+	font-weight: 400;
+	cursor: pointer;
+}
 /* GRID SYSTEM */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
