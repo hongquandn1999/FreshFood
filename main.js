@@ -10,3 +10,15 @@ window.onscroll = () => {
 		backTopTopBtn.style.display = 'none';
 	}
 };
+
+// Top menu change state
+let menuItems = document.getElementsByClassName('menu-item');
+console.log(menuItems)
+Array.from(menuItems).forEach((item, index) => {
+	item.onclick = (e) => {
+		let currentMenu = document.querySelector('.menu-item.active');
+		currentMenu.classList.remove('active');
+		item.classList.add('active')
+	}
+	
+})
