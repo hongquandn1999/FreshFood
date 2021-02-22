@@ -22,3 +22,18 @@ Array.from(menuItems).forEach((item, index) => {
 	}
 	
 })
+
+//  Food menu filter
+
+let foodMenuList = document.querySelector('.food-item-wrap');
+let foodCategory = document.querySelector('.food-category');
+let categories = foodCategory.querySelectorAll('button');
+
+Array.from(categories).forEach((item, index) => {
+	item.onclick = (e) => {
+		let currentCategory = foodCategory.querySelector('button.active');
+		currentCategory.classList.remove('active');
+		e.target.classList.add('active');
+		foodMenuList.classList = 'food-item-wrap ' + e.target.getAttribute('data-food-type')
+	}
+})
