@@ -25,7 +25,7 @@ html {
 	position: relative;
 	overflow-x: hidden;
 }
-
+/* Top Navbar */
 .nav {
 	position: fixed;
 	top: 0;
@@ -57,37 +57,211 @@ html {
 	justify-content: center;
 }
 
-.menu-item{
-    margin-left: 1rem;
-    padding: .5rem 1.5rem;
-    font-weight: 600;
-    font-size: 1rem;
-    transition: .5s ease-in-out;
-    cursor: pointer;
+.menu-item {
+	margin-left: 1rem;
+	padding: 0.5rem 1.5rem;
+	font-weight: 600;
+	font-size: 1rem;
+	transition: 0.5s ease-in-out;
+	cursor: pointer;
 }
 
 .menu-item:hover,
-.menu-item.active{
-    color: var(--white);
-    background-color: var(--primary-color);
-    border-radius: 1rem;
+.menu-item.active {
+	color: var(--white);
+	background-color: var(--primary-color);
+	border-radius: 1rem;
 }
 
-.cart-btn{
-    width: 3rem;
-    height: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--primary-color);
-    font-size: 2rem;
-    cursor: pointer;
-    transition: .5s ease-in-out;
-
+.cart-btn {
+	width: 3rem;
+	height: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--primary-color);
+	font-size: 2rem;
+	cursor: pointer;
+	transition: 0.5s ease-in-out;
 }
 
-.cart-btn:hover{
-    background-color: var(--primary-color);
-    color: var(--white);
-    border-radius: 1rem;
+.cart-btn:hover {
+	background-color: var(--primary-color);
+	color: var(--white);
+	border-radius: 1rem;
+}
+
+/* Home section */
+.fullheight {
+	height: 100vh;
+}
+
+.align-items-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.bg-img {
+	background-position: center;
+	background-size: cover;
+}
+
+.bg-img-fixed {
+	background-attachment: fixed;
+}
+
+.container {
+	width: 100%;
+	max-width: 1366px;
+	margin: 0 auto;
+}
+
+section {
+	padding: 9rem 0;
+	background-image: url('../img/brooke-lark-08bOYnH_r_E-unsplash.jpg');
+}
+
+.slogan {
+	text-align: left;
+}
+
+.slogan h1 {
+	font-size: 7rem;
+	color: var(--primary-color);
+}
+
+.slogan button {
+	padding: 1rem 5rem;
+	outline: none;
+	background-color: var(--background-color);
+	border: 0.125rem solid var(--primary-color);
+	color: var(--primary-color);
+	border-radius: 2rem;
+	margin: 3rem 0;
+	cursor: pointer;
+	font-weight: 600;
+	transition: .5s ease-in-out;
+}
+
+.slogan button:hover{
+	background-color: var(--primary-color);
+	color: var(--white);
+}
+
+/* GRID SYSTEM */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.col-xs-1 {
+		width: 8.33%;
+	}
+
+	.col-xs-2 {
+		width: 16.66%;
+	}
+
+	.col-xs-3 {
+		width: 25%;
+	}
+
+	.col-xs-4 {
+		width: 33.33%;
+	}
+
+	.col-xs-5 {
+		width: 41.66%;
+	}
+
+	.col-xs-6 {
+		width: 50%;
+	}
+
+	.col-xs-7 {
+		width: 58.33%;
+	}
+
+	.col-xs-8 {
+		width: 66.66%;
+	}
+
+	.col-xs-9 {
+		width: 75%;
+	}
+
+	.col-xs-10 {
+		width: 83.33%;
+	}
+
+	.col-xs-11 {
+		width: 91.66%;
+	}
+
+	.col-xs-12 {
+		width: 100%;
+	}
+
+	.h-xs {
+		display: none;
+	}
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+[class*='col-'] {
+	padding: 1rem;
+}
+
+.col-1 {
+	width: 8.33%;
+}
+
+.col-2 {
+	width: 16.66%;
+}
+
+.col-3 {
+	width: 25%;
+}
+
+.col-4 {
+	width: 33.33%;
+}
+
+.col-5 {
+	width: 41.66%;
+}
+
+.col-6 {
+	width: 50%;
+}
+
+.col-7 {
+	width: 58.33%;
+}
+
+.col-8 {
+	width: 66.66%;
+}
+
+.col-9 {
+	width: 75%;
+}
+
+.col-10 {
+	width: 83.33%;
+}
+
+.col-11 {
+	width: 91.66%;
+}
+
+.col-12 {
+	width: 100%;
+}
+
+.mb-nav {
+	display: none;
 }
