@@ -54,8 +54,8 @@
 				<div class="row">
 					<div class="col-6 col-xs-12">
 						<div class="slogan">
-							<h1>FreshFood</h1>
-							<p>
+							<h1 class="left-to-right play-on-scroll">FreshFood</h1>
+							<p class="left-to-right play-on-scroll delay-2">
 								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi
 								praesentium similique id, quaerat vel, voluptate magnam
 								veritatis aperiam ut quisquam unde voluptatibus illo sapiente
@@ -64,7 +64,9 @@
 								laboriosam accusantium atque! Reiciendis modi ea deleniti eos
 								voluptatum ratione.
 							</p>
-							<button>Order Now</button>
+							<div class="left-to-right play-on-scroll delay-4">
+								<button>Order Now</button>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -79,11 +81,11 @@
 						<img
 							src="assets/img/dan-gold-4_jhDO54BYg-unsplash.jpg"
 							alt="#"
-							class="fullwidth"
+							class="fullwidth left-to-right play-on-scroll"
 						/>
 					</div>
 					<div class="col-5 col-xs-12 align-items-center">
-						<div class="about-slogan">
+						<div class="about-slogan right-to-left play-on-scroll">
 							<h3>
 								<span class="primary-color">We</span> create
 								<span class="primary-color">delicious</span> memories for
@@ -121,11 +123,31 @@
 						quaerat rem aspernatur voluptate nisi.
 					</p>
 					<div class="food-category">
-						<button class='active' data-food-type="all">All food</button>
-						<button data-food-type="salad">Salad</button>
-						<button data-food-type="lorem">Lorem</button>
-						<button data-food-type="ipsum">Isum</button>
-						<button data-food-type="color">Color</button>
+						<div style="display: inline-block;" class="zoom play-on-scroll">
+							<button class="active" data-food-type="all">
+								All food
+							</button>
+						</div>
+						<div style="display: inline-block;" class="zoom play-on-scroll delay-2">
+							<button data-food-type="salad">
+								Salad
+							</button>
+						</div>
+						<div style="display: inline-block;" class="zoom play-on-scroll delay-4">
+							<button data-food-type="lorem">
+								Lorem
+							</button>
+						</div>
+						<div style="display: inline-block;" class="zoom play-on-scroll delay-6">
+							<button data-food-type="ipsum">
+								Ipsum
+							</button>
+						</div>
+						<div style="display: inline-block;"class="zoom play-on-scroll delay-8">
+							<button data-food-type="dolor">
+								Dolor
+							</button>
+						</div>
 					</div>
 					<div class="food-item-wrap all">
 						<div class="food-item salad-type">
@@ -306,7 +328,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-4">
-						<div class="review-wrap">
+						<div class="review-wrap zoom play-on-scroll delay-2">
 							<div class="review-content">
 								<p>
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
@@ -333,7 +355,7 @@
 						</div>
 					</div>
 					<div class="col-4">
-						<div class="review-wrap active">
+						<div class="review-wrap zoom play-on-scroll active">
 							<div class="review-content">
 								<p>
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
@@ -360,7 +382,7 @@
 						</div>
 					</div>
 					<div class="col-4">
-						<div class="review-wrap">
+						<div class="review-wrap zoom play-on-scroll delay-4">
 							<div class="review-content">
 								<p>
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
@@ -439,10 +461,8 @@
 							assumenda qui, fuga doloribus maxime.
 						</p>
 						<div class="input-group">
-							<input type="text" placeholder="Enter your email">
-							<button>
-								Subscribe
-							</button>
+							<input type="text" placeholder="Enter your email" />
+							<button>Subscribe</button>
 						</div>
 					</div>
 				</div>
